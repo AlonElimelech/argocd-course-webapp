@@ -39,7 +39,7 @@ jobs:
           context: .
           file: WebApplication1/Dockerfile
           push: true
-          tags: AlonElimelech/argocd-course-webapp:${{ github.sha }}
+          tags: alon12345/argocd-course-webapp-cicd:${{ github.sha }}
   promote-to-dev-environment:
     runs-on: ubuntu-latest
     needs: docker-build-push
